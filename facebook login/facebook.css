@@ -1,0 +1,462 @@
+* {
+    font-weight: 600;
+    padding: 0;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    }
+   
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+.title-box {
+    width: 500px;
+    display: block;
+    margin-bottom: 400px;
+    margin-left: 470px;
+    margin-top: 190px;
+}
+
+.title-box img {
+    width: 306px;
+    height: auto;
+    margin-left: -30px;
+    vertical-align: top;
+}
+
+.title-box p {
+    color: rgb(28, 30, 33);
+    font-size: 28px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+.form-box {
+    width: 410px;
+    height: 315.83px;
+    display: block;
+    line-height: 16px;
+    margin-bottom: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    padding-bottom: 50px;
+    margin-left: 60px;
+    margin-top: 150px;
+}
+
+.form-box input {
+    display: block;
+    margin-left: 16px;
+    font-size: 17px;
+    border: 1px solid rgb(219, 219, 219);
+    margin-top: 15px;
+    padding: 15px;
+    width: 345px;
+    height: 22px;
+    border-radius: 8px;
+}
+
+.login {
+    width: 364px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(8, 102, 255);
+    color: white;
+    border: none;
+    margin-top: 15px;
+    margin-left: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.form-box a {
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    border-top: 1px solid #222;
+    opacity: 0.2;
+    font-size: 12px;
+    margin-top: 30px;
+    width: 380px;
+    margin-left: 15px;
+}
+
+.new-account {
+    margin-top: 25px;
+    color: white;
+    background-color: rgb(66, 183, 42);
+    width: 180px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.create-page-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.create-page-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block; 
+    width: 600px;
+    margin-left: -72px;
+    margin-top: -20px;
+    display: flex;
+    font-weight: normal;
+}
+
+.create-page-box a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5px;
+    
+}
+
+
+/* Media Queries para dispositivos móveis e tablets */
+@media screen and (max-width: 1024px) {
+    .box {
+        display: flex;
+        flex-direction: column; /* Tudo em coluna */
+        justify-content: flex-start;
+        align-items: center; /* Centraliza horizontalmente */
+        width: 100%;
+    }
+   
+    .title-box {
+        display: block;
+        align-items: center; /* Centraliza horizontalmente */
+        margin: 0 auto; /* Centraliza na tela */
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+        max-width: 360px; /* Limita a largura para telas pequenas */
+    }
+
+    .title-box img {
+        width: 100%; /* Usa toda a largura disponível do contêiner */
+        max-width: 360px; /* Define um limite máximo */
+        height: auto; /* Ajusta automaticamente a altura */
+        margin: 0 auto; /* Centraliza a imagem */
+        width: 320px;
+    }
+
+    .title-box p {
+        font-size: 21px; /* Ajusta para telas menores */
+        width: 100%; /* Garante alinhamento com o contêiner */
+        max-width: 360px; /* Limita o tamanho máximo */
+        margin: 10px 0; /* Espaçamento entre imagem e texto */
+        text-align: center; /* Centraliza o texto */
+        
+    }
+
+    .form-box {
+        width: 100%; /* Garante alinhamento com o contêiner */
+        max-width: 360px; /* Limita a largura */
+        margin: 20px auto; /* Centraliza e dá espaçamento */
+        padding: 15px;
+        margin-top: 35px;
+        
+    }
+
+    .form-box input {
+        width: 100%; /* Ocupa toda a largura */
+        padding: 10px;
+        font-size: 16px;
+        width: 335px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .login{
+        width: 100%;
+        max-width: 360px;
+        font-size: 16px;
+        height: 48px;
+        margin: 10px 0;
+        
+    }
+
+    .new-account{
+        width: 100%;
+        max-width: 360px;
+        font-size: 16px;
+        height: 48px;
+        margin: 10px 0;
+        margin-top: 20px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .line {
+        border-top: 1px solid #222;
+        opacity: 0.2;
+        font-size: 12px;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .create-page-box {
+        width: 100%;
+        max-width: 360px;
+        margin: 20px auto; /* Centraliza o box */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .create-page-box p {
+        font-size: 14px;
+        margin: 10px 0; /* Ajusta o espaçamento vertical */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .create-page-box a {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 5px; /* Espaçamento lateral */
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: column; /* Tudo em coluna */
+        justify-content: flex-start;
+        align-items: center; /* Centraliza horizontalmente */
+        width: 100%;
+    }
+   
+    .title-box {
+        display: flex;
+        flex-direction: column; /* Coloca a imagem e o texto em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        margin: 0 auto; /* Centraliza na tela */
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+        max-width: 360px; /* Limita a largura para telas pequenas */
+    }
+
+    .title-box img {
+        width: 100%; /* Usa toda a largura disponível do contêiner */
+        max-width: 360px; /* Define um limite máximo */
+        height: auto; /* Ajusta automaticamente a altura */
+        margin: 0 auto; /* Centraliza a imagem */
+        width: 320px;
+    }
+
+    .title-box p {
+        font-size: 21px; /* Ajusta para telas menores */
+        width: 100%; /* Garante alinhamento com o contêiner */
+        max-width: 360px; /* Limita o tamanho máximo */
+        margin: 10px 0; /* Espaçamento entre imagem e texto */
+        text-align: center; /* Centraliza o texto */
+        
+    }
+
+    .form-box {
+        width: 100%; /* Garante alinhamento com o contêiner */
+        max-width: 360px; /* Limita a largura */
+        margin: 20px auto; /* Centraliza e dá espaçamento */
+        padding: 15px;
+        margin-top: 35px;
+    }
+
+    .form-box input {
+        width: 100%; /* Ocupa toda a largura */
+        padding: 10px;
+        font-size: 16px;
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login{
+        width: 100%;
+        max-width: 360px;
+        font-size: 16px;
+        height: 48px;
+        margin: 10px 0;
+        
+    }
+
+    .new-account{
+        width: 100%;
+        max-width: 360px;
+        font-size: 16px;
+        height: 48px;
+        margin: 10px 0;
+        margin-top: 20px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .line {
+        border-top: 1px solid #222;
+        opacity: 0.2;
+        font-size: 12px;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .create-page-box {
+        width: 100%;
+        max-width: 360px;
+        margin: 20px auto; /* Centraliza o box */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .create-page-box p {
+        font-size: 14px;
+        margin: 10px 0; /* Ajusta o espaçamento vertical */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .create-page-box a {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 5px; /* Espaçamento lateral */
+        text-decoration: none;
+    }
+}
+
+    
+        @media screen and (max-width: 500px) {
+            .box {
+                display: flex;
+                flex-direction: column; /* Tudo em coluna */
+                justify-content: flex-start;
+                align-items: center; /* Centraliza horizontalmente */
+                width: 100%;
+            }
+           
+            .title-box {
+                display: flex;
+                flex-direction: column; /* Coloca a imagem e o texto em coluna */
+                align-items: center; /* Centraliza horizontalmente */
+                margin: 0 auto; /* Centraliza na tela */
+                width: 100%; /* Ocupa toda a largura do contêiner pai */
+                max-width: 360px; /* Limita a largura para telas pequenas */
+            }
+        
+            .title-box img {
+                width: 100%; /* Usa toda a largura disponível do contêiner */
+                max-width: 360px; /* Define um limite máximo */
+                height: auto; /* Ajusta automaticamente a altura */
+                margin: 0 auto; /* Centraliza a imagem */
+                width: 320px;
+            }
+        
+            .title-box p {
+                font-size: 21px; /* Ajusta para telas menores */
+                width: 100%; /* Garante alinhamento com o contêiner */
+                max-width: 360px; /* Limita o tamanho máximo */
+                margin: 10px 0; /* Espaçamento entre imagem e texto */
+                text-align: center; /* Centraliza o texto */
+                
+            }
+        
+            .form-box {
+                width: 100%; /* Garante alinhamento com o contêiner */
+                max-width: 360px; /* Limita a largura */
+                margin: 20px auto; /* Centraliza e dá espaçamento */
+                padding: 15px;
+                margin-top: 35px;
+            }
+        
+            .form-box input {
+                width: 100%; /* Ocupa toda a largura */
+                padding: 10px;
+                font-size: 16px;
+                width: 335px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        
+            .login{
+                width: 100%;
+                max-width: 360px;
+                font-size: 16px;
+                height: 48px;
+                margin: 10px 0;
+                
+            }
+
+            .new-account{
+                width: 100%;
+                max-width: 360px;
+                font-size: 16px;
+                height: 48px;
+                margin: 10px 0;
+                margin-top: 20px;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            .line {
+                border-top: 1px solid #222;
+                opacity: 0.2;
+                font-size: 12px;
+                margin-top: 20px;
+                width: 100%;
+                margin-left: auto;
+            }
+        
+            .create-page-box {
+                width: 100%;
+                max-width: 360px;
+                margin: 20px auto; /* Centraliza o box */
+                text-align: center; /* Centraliza o conteúdo */
+            }
+        
+            .create-page-box p {
+                font-size: 14px;
+                margin: 10px 0; /* Ajusta o espaçamento vertical */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+            .create-page-box a {
+                font-weight: bold;
+                font-size: 14px;
+                margin: 0 5px; /* Espaçamento lateral */
+                text-decoration: none;
+            }
+        }
+        
+    
